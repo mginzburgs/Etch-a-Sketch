@@ -25,11 +25,14 @@ function createGridButton() {
 
 function handleSubmit() {
   let gridSize = document.querySelector("#grid-size-input").value;
-  if (value <= 1000) {
+  console.log(gridSize);
+  if (gridSize <= 1000) {
     createSquareGrid(gridSize);
     dialog.close();
   }
 }
+
+dialogButton.addEventListener("click", handleSubmit);
 
 // FUNCTIONS
 function colorSquaresOnHover() {
