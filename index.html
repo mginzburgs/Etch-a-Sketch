@@ -8,10 +8,24 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="container">
+<body class="main">
+    <div class="container"> </div>
 
-    </div>
+
+
+
+    <dialog class=".dialog">
+        <p>Enter new grid size:</p>
+        <form method="dialog">
+            <div class="dialog__wrapper">
+                <label for="grid-size-input">
+                    <input type="number" id="grid-size-input" max="1000" required>
+                </label>
+                <button class='dialog-button' type="submit" onclick="handleSubmit()">confirm</button>
+            </div>
+        </form>
+    </dialog>
+
     <script src="app.js"></script>
 </body>
 
